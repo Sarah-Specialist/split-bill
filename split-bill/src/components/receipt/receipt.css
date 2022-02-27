@@ -1,0 +1,8 @@
+.receiptTable {
+    width: 100%;
+}
+
+.receiptTable th,
+.receiptTable td {
+    width: 33.3%;
+}
