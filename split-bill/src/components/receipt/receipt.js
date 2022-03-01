@@ -5,6 +5,7 @@ export default function Receipt(props) {
     
     return (
         <>
+        <div className="receipt">
         <h1>Your receipt</h1>
         <table className="receiptTable">
             <tbody>
@@ -25,6 +26,7 @@ export default function Receipt(props) {
             )}
             </tbody>
         </table>
+        </div>
         </>
     )
 }

@@ -1,14 +1,5 @@
-.receiptTable {
-    width: 100%;
-}
-
-.receiptTable th,
-.receiptTable td {
-    width: 33.3%;
-}
-
-.receipt {
-    width: 40vw;
+.selectMain {
+    width: 80vw;
     min-height: 70vh;
     height: auto;
     background-color: black;
@@ -19,4 +10,4 @@
     left: 5%;
     border: 1px solid black;
     border-radius: 10px;
-  }
+}

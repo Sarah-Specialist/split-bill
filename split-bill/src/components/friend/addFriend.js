@@ -9,15 +9,21 @@ export default function AddFriend(props) {
     }
 
     const [friends, setFriends] = useState([]);
+
     function handleClick(event) {
         event.preventDefault();
 
         setFriends([...friends, friend]);
+
+        if (friends.length >= 4) {
+            alert("Maximum 5 friends")
+        }
         //Post to external array of friends
     }
 
     return (
         <>
+        <div className="friends">
         <h1>Your friends</h1>
         <form className="form">
             <input name="name"
@@ -34,7 +40,7 @@ export default function AddFriend(props) {
             <p className="list">{friend}</p>
             )}
         </div>
-        
+        </div>
         </>
     )
 }

@@ -1,0 +1,17 @@
+.submit {
+    position: absolute;
+    bottom: 2%;
+    left: 45%;
+    background-color: black;
+    opacity: 80%;
+    color: gold;
+    border: 3px solid gold;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+  
+  .submit:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }

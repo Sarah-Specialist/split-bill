@@ -2,7 +2,10 @@ import API from './api/api';
 import Header from './parts/header/header';
 import AddFriend from './components/friend/addFriend';
 import Receipt from './components/receipt/receipt';
+import SplitButton from './components/splitbutton/splitbutton';
+import Select from './components/select/select';
 import React, {useEffect, useState} from 'react';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -20,19 +23,23 @@ function App() {
   useEffect(() => {
     GetReceipt();
   }, []);
-
   
   return (
     <div className="App">
       <Header />
       <div className="main">
-      <div className="receipt">
-        <Receipt receipt={receipt} />
-      </div>
-      <div className="friends">
-        <AddFriend />
-      </div>
-      <button type="submit" className="submit">Split my bill!</button>
+      <Router>
+      <Link to='/select'><SplitButton /></Link>
+        <Switch>
+          <Route path="/">
+            <Receipt receipt={receipt} />
+            <AddFriend />
+          </Route>
+          <Route path='/select'>
+            <Select />
+          </Route>
+        </Switch>
+      </Router>
       </div>
     </div>
   );

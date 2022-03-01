@@ -26,6 +26,7 @@
     bottom: 0;
     left: 43%;
     color: gold;
+    font-weight: bold;
 }
 
 .friendsList {
@@ -41,3 +42,17 @@
     border-radius: 3px;
     color: black;
 }
+
+.friends {
+    width: 40vw;
+    min-height: 70vh;
+    height: auto;
+    background-color: black;
+    opacity: 80%;
+    color: white;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
