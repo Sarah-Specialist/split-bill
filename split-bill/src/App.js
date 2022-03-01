@@ -25,6 +25,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div className="main">
       <div className="receipt">
         <Receipt receipt={receipt} />
       </div>
@@ -32,6 +33,7 @@ function App() {
         <AddFriend />
       </div>
       <button type="submit" className="submit">Split my bill!</button>
+      </div>
     </div>
   );
 }

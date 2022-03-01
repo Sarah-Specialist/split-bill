@@ -8,10 +8,11 @@ export default function AddFriend(props) {
         setFriend(event.target.value);
     }
 
+    const [friends, setFriends] = useState([]);
     function handleClick(event) {
         event.preventDefault();
 
-        //setFriends([...friends, friend]);
+        setFriends([...friends, friend]);
         //Post to external array of friends
     }
 
@@ -27,6 +28,13 @@ export default function AddFriend(props) {
             />
             <i className="fa fa-plus" onClick={handleClick} ></i>
         </form>
+        <div className="max">Max 5 friends</div>
+        <div className="friendsList">
+            {friends.map(friend => 
+            <p className="list">{friend}</p>
+            )}
+        </div>
+        
         </>
     )
 }

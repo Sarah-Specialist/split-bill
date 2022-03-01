@@ -5,6 +5,7 @@
     border: 1px solid gold;
     border-radius: 3px;
     color: black;
+    text-align: center;
 }
 
 .form i {
@@ -18,4 +19,25 @@
 
 .form i:hover {
     cursor: pointer;
+}
+
+.max {
+    position: absolute;
+    bottom: 0;
+    left: 43%;
+    color: gold;
+}
+
+.friendsList {
+    margin-top: 20px;
+}
+
+.list {
+    margin: 10px 170px;
+    width: 150px;
+    height: 23px;
+    background-color: gold;
+    border: 1px solid gold;
+    border-radius: 3px;
+    color: black;
 }
