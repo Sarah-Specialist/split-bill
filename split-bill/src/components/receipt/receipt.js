@@ -7,6 +7,7 @@ export default function Receipt(props) {
         <>
         <h1>Your receipt</h1>
         <table className="receiptTable">
+            <tbody>
             <tr>
                 <th>Item</th>
                 <th>Quantity</th>
@@ -14,7 +15,7 @@ export default function Receipt(props) {
             </tr>
             {props.receipt.map((item) => {
                 return (
-                    <tr>
+                    <tr key={item.id}>
                         <td>{item.name}</td>
                         <td>{item.quantity}</td>
                         <td>{item.price}</td>
@@ -22,6 +23,7 @@ export default function Receipt(props) {
                 )
             }
             )}
+            </tbody>
         </table>
         </>
     )

@@ -1,6 +1,6 @@
 import API from './api/api';
 import Header from './parts/header/header';
-import Friends from './components/friends/friends';
+import AddFriend from './components/friend/addFriend';
 import Receipt from './components/receipt/receipt';
 import React, {useEffect, useState} from 'react';
 import './App.css';
@@ -25,11 +25,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="friends">
-        <Friends />
-      </div>
       <div className="receipt">
         <Receipt receipt={receipt} />
+      </div>
+      <div className="friends">
+        <AddFriend />
       </div>
       <button type="submit" className="submit">Split my bill!</button>
     </div>
