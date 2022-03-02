@@ -1,9 +1,6 @@
-import {useHistory} from 'react-router-dom';
 import './splitbutton.css';
 
 export default function SplitButton() {
-
-    //const history = useHistory();
     
     return (
         <>
@@ -15,4 +12,3 @@ export default function SplitButton() {
         </>
     )
 }
-//onClick={() => {history.push('/select')}}

@@ -29,11 +29,11 @@ function App() {
       <Header />
       <div className="main">
       <Router>
-      <Link to='/select'><SplitButton /></Link>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Receipt receipt={receipt} />
             <AddFriend />
+            <Link to='/select'><SplitButton /></Link>
           </Route>
           <Route path='/select'>
             <Select />
